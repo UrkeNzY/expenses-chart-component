@@ -20,3 +20,7 @@ I learned how to get the date and day through JavaScript.
 const date = new Date();
 let dayIndex = date.getDay();
 ```
+
+### Live Website
+
+Check out the live website [here](https://urkenzy.github.io/expenses-chart-component/).
