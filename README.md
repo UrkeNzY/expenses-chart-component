@@ -16,8 +16,7 @@ Users should be able to:
 
 I learned how to get the date and day through JavaScript.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+```js
+   const date = new Date();
+   let dayIndex = date.getDay();
 ```
