@@ -1,0 +1,231 @@
+body {
+  font-size: 1.125rem;
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(29, 63%, 92%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ol {
+  list-style: none;
+  min-height: 6.25em;
+  max-height: 10rem;
+  margin: 0 0 1.5625em 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  color: hsl(25, 47%, 15%);
+  margin-bottom: 0.1875em;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(186, 34%, 60%);
+}
+
+#balance-card {
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(27, 66%, 92%);
+  width: 22%;
+  min-width: 275px;
+  max-width: 325px;
+  padding: 1.125em 1.65em;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto 1.25em auto;
+}
+
+#balance-text p:first-of-type {
+  font-size: 0.875rem;
+  margin: 0 0 0.3125em 0;
+}
+
+#balance-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#circle-filled {
+  width: 2.1875em;
+  height: 2.1875em;
+  margin: 0;
+  border-radius: 50%;
+  background-color: hsl(25, 47%, 15%);
+}
+
+#circle-outline {
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  border: 0.125em solid hsl(27, 66%, 92%);
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 30.5%;
+  right: 3.125em;
+}
+
+#spending-overview-card {
+  background-color: hsl(38, 100%, 98%);
+  color: hsl(25, 47%, 15%);
+  width: 22%;
+  min-width: 275px;
+  max-width: 325px;
+  margin: 0 auto;
+  padding: 1.75em 2em 1.875em 2em;
+  border-radius: 13px;
+  font-size: 0.875rem;
+}
+
+#spending-overview-card h2 {
+  margin: 0;
+  font-size: 1.375rem;
+}
+
+ol li {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ol li p {
+  padding: 0;
+  margin: 0.125em 0 0 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: hsl(28, 10%, 53%);
+}
+
+.graph-pop-up {
+  background-color: hsl(25, 47%, 15%);
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+  padding: 0.35em;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: absolute;
+  margin-bottom: 5.625em;
+  display: none;
+}
+
+.graph-line {
+  min-width: 35px;
+  margin: 0 10% 0 0;
+  padding: 0;
+  border-radius: 4px;
+  background-color: hsl(10, 79%, 65%);
+}
+
+.graph-line:hover {
+  background-color: hsl(10, 100%, 76%);
+  cursor: pointer;
+}
+
+.graph-line.current-day {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.graph-line.current-day:hover {
+  background-color: hsl(187, 49%, 80%);
+}
+
+.graph-line.monday {
+  height: 2.1875rem;
+}
+
+.graph-line.tuesday {
+  height: 4.0625rem;
+  margin-top: 2rem;
+}
+
+.graph-line.wednesday {
+  height: 6.25rem;
+  margin-top: 65px;
+}
+
+.graph-line.thursday {
+  height: 3.75rem;
+  margin-top: 25px;
+}
+
+.graph-line.friday {
+  height: 2.8125rem;
+  margin-top: 10px;
+}
+
+.graph-line.saturday {
+  height: 5.3125rem;
+  margin-top: 50px;
+}
+
+.graph-line.sunday {
+  height: 3.25rem;
+  margin-top: 17px;
+}
+
+hr {
+  outline: none;
+  border: 0.0625em solid hsl(35, 44%, 92%);
+}
+
+#bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.75em;
+}
+
+#this-month p,
+#previous-month p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+#this-month p:first-of-type {
+  color: hsl(28, 10%, 53%);
+}
+
+#this-month p:last-of-type {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#previous-month p:first-of-type {
+  font-weight: 700;
+  text-align: right;
+}
+
+#previous-month p:last-of-type {
+  color: hsl(28, 10%, 53%);
+}
+
+@media (max-width: 320px) {
+  body {
+    zoom: 0.85;
+  }
+
+  .attribution {
+    font-size: 0.625rem;
+  }
+}
